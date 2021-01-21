@@ -1,5 +1,6 @@
 package base;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterClass;
@@ -22,7 +23,10 @@ public class BaseTests {
     }
 
     @BeforeMethod
-    public void goHome(){driver.get("https://news.sky.com/uk");}
+    public void goHome(){
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get("https://news.sky.com/uk");
+    }
 
     @AfterClass
     public void tearDown(){driver.quit();}
