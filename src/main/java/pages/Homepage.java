@@ -9,9 +9,9 @@ public class Homepage {
 
     public Homepage(WebDriver driver){this.driver = driver;}
 
-    public AccessabilityPage clickAccessabilityPage(){
-        clickLink("");
-        return new AccessabilityPage(driver);
+    public AccessibilityPage clickAccessibilityPage(){
+        clickLink("Accessibility");
+        return new AccessibilityPage(driver);
 
     }
 
