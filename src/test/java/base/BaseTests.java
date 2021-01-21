@@ -24,7 +24,6 @@ public class BaseTests {
 
     @BeforeMethod
     public void goHome(){
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://news.sky.com/uk");
     }
 
